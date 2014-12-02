@@ -1,0 +1,39 @@
+Team:
+- Szeyin Lee
+- Viona Lam
+
+Summary:
+Classifying Chinese and English Vocabulary Based on International Phonetic Alphabet 
+
+1) Plan:
+We will build a naive bayes Chinese/English vocabulary phoetic classifier. Treating each 
+IPA alphabet as an independent feature, we will pre-process data of English vocab and
+Chinese vocab into IPA forms, and train the model on the data. It's supervised machine
+learning because we already know the label for each data point. 
+
+This will be our baseline model and we are planning to explore some extensions such as:
+- using bi-grams from the IPA alphabet for the naive bayes model 
+- looking into other models such as support vector machine
+- compare results from all the extensions
+
+2) Experiment: 
+We will reserve part of the Chinese and English IPA data to be the testing data set. We will
+run the classifier on the testing set, and see how many vocabularies were classified 
+correctly (baseline is 50%). 
+
+Resources:
+1) Data
+	- English Vocabulary
+		UCI Dataset
+		https://archive.ics.uci.edu/ml/datasets/Bag+of+Words
+	- Chinese Vocabulary
+		现代汉语常用词汇表 (Modern Chinese Frequent Vocab List)
+		http://vdisk.weibo.com/s/ueoM8g6c-sm2o
+
+2) Converting English/Chinese into IPA form
+	- Tool to translate English words into IPA form
+		http://lingorado.com/ipa/
+	- Tool to translate Chinese words into IPA form
+		http://learn-foreign-language-phonetics.com/chinese-pinyin-phonetic-transcription-converter.php?site_language=english
+
+3) Ourselves as fluent speakers in English & Chinese
