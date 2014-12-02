@@ -1,0 +1,142 @@
+CS 159: Natural Language Processing
+Final Project - Status Report
+
+Topic:
+Classifying Chinese and English Vocabulary Based on International Phonetic Alphabet 
+
+Team:
+- Szeyin Lee
+- Viona Lam
+
+Summary:
+- Converted part of English Corpus into IPA format
+- Converted part of Chinese Corpus into IPA format
+- Modified Mulinomial Naive Bayese Classification Model from assignment 7
+  for Chinese / English IPA classification 
+- Ran the modified model with 450 Chinese and 450 English training words,
+  and tested with 50 English and 50 Chinese words, with lambda of 0.001,
+  resulted in 98% Accuracy
+
+Results:
+lambda =  0.001
+correct = 98.0
+incorrect = 2.0
+
+frəʊnɪŋ english 	-8.039724696202041
+əkseləreɪtə english 	-12.51093655516065
+lɒpɪŋ english 	-6.199403074264476
+dʒʌntə english 	-7.742599158615789
+rɪsɪdɪŋ english 	-7.310486507111971
+mætrɑ:ɪətʃ english 	-12.552698346165293
+densɪtɪ english 	-7.011771137227027
+su:pkəmpju:tɪŋ english 	-20.131961332771823
+mʊərɪŋ english 	-6.866562850241301
+kəndʒestʃən english 	-13.632616736285799
+ʌnftəd english 	-7.117887012446011
+kənsi:vəbl english 	-13.503883192483798
+sneɪkɪbɪt english 	-10.009307077514944
+kɒndʒʊə english 	-9.253251729381915
+kɔɪnəs english 	-6.795991945615627
+heɪməʊdestɪ english 	-12.808784004499266
+fæssʃɪə english 	-8.180256883168191
+bækslæpɪŋ english 	-11.842165356866014
+emfɪsemə english 	-10.21172925971847
+ʃeəd english 	-4.098160163022703
+kreɪɪk english 	-6.194153485603617
+drʌmstɪk english 	-10.184702357907325
+kænəʊɪŋ english 	-8.306537570941593
+ɪnɔ:gænɪk english 	-12.14242383156395
+weɪdɪŋ english 	-6.477472921293991
+əksəntʃʊeɪtɪd english 	-15.256216943506614
+vedʒɪtəbl english 	-11.440008511466878
+hɪbraɪdaɪzeɪʃn english 	-17.800269049350522
+dɪstrɪbtə english 	-10.08976149808998
+bɑ:θɪŋ english 	-8.730393475174838
+nɒŋgʌvənmənt english 	-17.0337756583694
+pɒlmɪʃɪst english 	-10.844200733540081
+revəl english 	-5.932289235834045
+pærədɪz english 	-8.295455279320059
+metæmɔ:fəʊsɪs english 	-17.695935979546974
+kɔ:lə english 	-6.096613963728627
+vɪkærrs english 	-8.382110949473018
+rɪfəi:ld english 	-10.275500829874055
+mədəm english 	-5.430067996979428
+əʊvɜ:pleɪɪŋ english 	-15.001366908814006
+spʊd english 	-4.860224252924603
+si:ðz english 	-8.517075741064048
+ri:kɪŋ english 	-7.698676629615942
+defaɪn english 	-7.4517402686487575
+səfəʊmɔ: english 	-11.074067196447329
+sʌbɜ:bən english 	-12.216321581786246
+belɪ english 	-3.8122306697597335
+dʒɒbd english 	-7.53607905089615
+ɪnflʊenʃl english 	-11.876319799185275
+spʌtərɪŋ english 	-10.052620097847823
+pɑʊtsʰuənʂɨli chinese 	-16.74643588730849
+liŋtan chinese 	-6.147054186790291
+pʰipuɔtʂanlɑŋ chinese 	-16.9331279491194
+tiɛnɕinxɑʊ chinese 	-11.775593089241976
+xankʊŋ chinese 	-7.350939828900289
+lɑʊtsɨkɯʌ chinese 	-13.029558495645452
+tɕinxɤʊkʊŋtsuɔ chinese 	-19.220879962350452
+tsʰʊŋjiɤʊ chinese 	-11.678595506657867
+piɛwutʰɑfɑ chinese 	-13.137129578737875
+tʰɑʊli chinese 	-7.045217445442245
+kʰuaɪtʂuɑŋ chinese 	-11.766656119544248
+pʰɑʊtɕiɛntʂəŋtsʰɯʌ chinese 	-23.159002580215986
+piɛntiɛntʂan chinese 	-13.693277266336384
+tɕʰuanfanʂɯʌ chinese 	-16.39810358002673
+wueɪɕinsɑʊti chinese 	-14.594791472107932
+tɑʊjiɛ chinese 	-7.127344725185338
+miŋtʂəntʂʊŋwuaɪ chinese 	-18.861789203066923
+jinlitsɨ chinese 	-9.714131635446597
+xanɥupʰinjin chinese 	-15.489264047975196
+wutʰuɔpɑŋ chinese 	-11.20382892031075
+ɕinkʰaɪʂɯʌ chinese 	-13.592301922134984
+tɕiŋwueɪ chinese 	-10.229126939333907
+jintu chinese 	-4.6091818261496185
+ɕiɑliŋjiŋ chinese 	-10.334237929741889
+tʂʰuanɥyɛn chinese 	-13.70288076994269
+kuɔtɕitʂuji chinese 	-12.9558799150636
+jiwu chinese 	-4.449013872783697
+tɕyʂɨwuəntiŋ chinese 	-15.595461276271434
+tɕipənkueɪly chinese 	-17.382179113558006
+pitʂaɪ chinese 	-6.7312988959006
+tsʰɑʊmɑʊ chinese 	-10.829979853450878
+tɕʰitaɪ chinese 	-7.891520644136394
+peɪʂu chinese 	-6.110884305454053
+tɕintɕi chinese 	-6.823243024530578
+tɕiɛnwuən chinese 	-11.112481054061373
+piɛnɕiɑŋ chinese 	-8.422489101461379
+feɪtɕʰiwu chinese 	-11.469754609948867
+tiɛnxuɔ chinese 	-8.987428374033936
+tɕʰintɕuan chinese 	-10.966943280354425
+nʊŋjiɛʂəŋtʂʰan chinese 	-17.37929583457615
+ɕitʂɤʊ chinese 	-6.824158733407431
+ɕiʂueɪly chinese 	-10.97278291638195
+tʂɨfɑɕynliɛn chinese 	-16.5475731423867
+pifən chinese 	-6.136055508610189
+mənlu english 	-5.866070679030425
+tɕyntʂu chinese 	-8.197631142406928
+kɯʌtʂʰuʂɨ chinese 	-11.651143098266436
+tɕʰitʊŋ chinese 	-7.2731831605650665
+jinpeɪ english 	-7.245689788219309
+fɑɕiɛn chinese 	-6.369709053797608
+
+Problems: 
+- The accuracy seems too high, some possible reasons are:
+	a) The sets of data seem to have characteristics that are different enough in sounds for the languages to be easily differentiated.
+        i) This is not an issue.
+    b) The test set is not very large, and may not fully capture possible shortcomings of the model.
+        i) Further work will be done to explore larger test sets and to take a closer look at where errors may be occurring
+        ii) May explore other machine learning models such as decision trees.
+
+Hours:
+Total number of hours spent so far:
+Viona: 8h (Not ashamed to say that most of those were spent struggling with various libraries and encodings.)
+
+Code:
+The modified code for Multinomial Naive Bayes Model from assignment 7 can be found at
+https://gist.github.com/anonymous/fcf3f82357ed038b134d
+The data and processing scripts can be found at:
+https://github.com/violxy/nlpfinal
