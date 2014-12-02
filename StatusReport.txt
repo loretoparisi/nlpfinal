@@ -132,11 +132,11 @@ Problems:
         ii) May explore other machine learning models such as decision trees.
 
 Hours:
-Total number of hours spent so far:
+Total number of hours spent so far
 Viona: 8h (Not ashamed to say that most of those were spent struggling with various libraries and encodings.)
+Szeyin: 7h (creating sample data, modifying/running model, figuring out github)
 
 Code:
-The modified code for Multinomial Naive Bayes Model from assignment 7 can be found at
-https://gist.github.com/anonymous/fcf3f82357ed038b134d
-The data and processing scripts can be found at:
+The data and processing scripts and the modified code for Multinomial Naive Bayes Model from assignment 7 can be found atcan be found at:
 https://github.com/violxy/nlpfinal
+
