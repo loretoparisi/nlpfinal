@@ -1,33 +1,186 @@
-\documentclass{paper}
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
 \usepackage{tipa}
-\begin{document}
-\title{NLP Final Project}
+
+\title{NLP Final Project : \\
+Building an International Phonetic Alphabet Classifier}
 \author{Viona Lam, Szeyin Lee}
+\date{\today}
+
+\begin{document}
+
 \maketitle
+
+
 \section{Introduction}
 Given a word in its IPA form that is either English, Chinese or Japanese, our model classifies which language it is based on labeled data.
+
 \section{Experimental Setup}
+
 \subsection{Models}
-Due to ease of use, and relevance to our project goal of classifying words into their source languages, we chose to use the linear classifiers available in the \_\_\_ library\footnote{Add Source Here}, \_\_\_ and \_\_\_.
-\subsubsection{Model 1: Add stuff here}
-\subsubsection{Model 2: Add stuff here}
+
+Instead of coding the models ourselves from scratch, we leverage the existing models that have been built and optimized, available in the Stanford JavaNLP Classifier library\footnote{http://nlp.stanford.edu/software/classifier.shtml}. A classifier is a machine learning tool that takes data points and classify them into one of k classes. For this project, we are using two classifiers: Naive Bayes Model and Multinomial Logistic Regression Model. For both of the models, we use the same set of features: unigram, bigram, trigram, and counts. 
+
+\subsubsection{Model 1: Naive Bayes (NB)}
+
+Naive Bayes is a generative model that models the joint distribution of p(label, features). It is important to note that it has the naive Bayes assumption that the features are independent given the class.
+
+\subsubsection{Model 2: Multinomial Logistic Regression (MLR)}
+Multinomial Logistic Regression is a discriminative model. It models the
+conditional distribution p(label|features) directly and does not have the strong independent assumptions as Naive Bayes.
+
 \subsection{Data}
+
 \subsubsection{English Data}
-English data of 44460 of the most common words from the NY Times was obtained from the Bag of Words Dataset provided by UC Irvine\footnote{\textbf{Bag of Words Data Set:} https://archive.ics.uci.edu/ml/datasets/Bag+of+Words}. These were then converted into IPA form using Tom Brondstod's English to IPA converter.\footnote{\textbf{English to IPA Converter 1:} http://tom.brondsted.dk/text2phoneme/} To ensure accuracy, the results were also partially cross-checked with another converter.\footnote{\textbf{English to IPA Converter 2: }http://lingorado.com/ipa/} In addition, as English speakers, the IPA sounded right to us.
+English data of 44,460 of the most common words from the NY Times was obtained from the Bag of Words Dataset provided by UC Irvine\footnote{\textbf{Bag of Words Data Set:} https://archive.ics.uci.edu/ml/datasets/Bag+of+Words}. These were then converted into IPA form using Tom Brondstod's English to IPA converter.\footnote{\textbf{English to IPA Converter 1:} http://tom.brondsted.dk/text2phoneme/} To ensure accuracy, the results were also partially cross-checked with another converter.\footnote{\textbf{English to IPA Converter 2: }http://lingorado.com/ipa/} In addition, as English speakers, the IPA sounded right to us.
+
 \subsubsection{Mandarin Chinese Data}
-Mandarin Chinese data of 38285 of the most common words was obtained from the Modern Chinese Frequent Vocab List\footnote{\textbf{Modern Chinese Frequent Vocab List: }http://vdisk.weibo.com/s/ueoM8g6c-sm2o (click the blue button with the downwards arrow to download)} a text published by the People's Republic of China's State Language Commission in November 2008. These were then converted into pinyin using the NJStar software\footnote{\textbf{Chinese Word Processor: }http://www.njstar.com/cms/njstar-chinese-word-processor-download}, and then into IPA form by referring to available documentation\footnote{\textbf{Pinyin to IPA Mapping:} https://github.com/cburgmer/cjklib/blob/master/cjklib/data/pinyinipamapping.csv} from cjklib\footnote{\textbf{CJKLib: }https://code.google.com/p/cjklib/}, a publicly accessible python library. Tones were stripped from the conversions, as they would make the decision of whether a word is Chinese or not incredibly trivial. The results were partially cross-checked with another converter\footnote{\textbf{Limited Chinese to IPA Converter: }http://easypronunciation.com/en/chinese-pinyin-phonetic-transcription-converter} to ensure accuracy.
+Mandarin Chinese data of 61,698 of the most common words was obtained from the Modern Chinese Frequent Vocab List\footnote{\textbf{Modern Chinese Frequent Vocab List: }http://vdisk.weibo.com/s/ueoM8g6c-sm2o (click the blue button with the downwards arrow to download)} a text published by the People's Republic of China's State Language Commission in November 2008. These were then converted into pinyin using the NJStar software\footnote{\textbf{Chinese Word Processor: }http://www.njstar.com/cms/njstar-chinese-word-processor-download}, and then into IPA form by referring to available documentation\footnote{\textbf{Pinyin to IPA Mapping:} https://github.com/cburgmer/cjklib/blob/master/cjklib/data/pinyinipamapping.csv} from cjklib\footnote{\textbf{CJKLib: }https://code.google.com/p/cjklib/}, a publicly accessible python library. Tones were stripped from the conversions, as they would make the decision of whether a word is Chinese or not incredibly trivial. The results were partially cross-checked with another converter\footnote{\textbf{Limited Chinese to IPA Converter: }http://easypronunciation.com/en/chinese-pinyin-phonetic-transcription-converter} to ensure accuracy.
+
 \subsubsection{Japanese Data}
-Japanese Data of 123332 of the most common words was obtained from a selection of Japanese novels online\footnote{\textbf{Most Common Words in Japanese Novels:} http://pomax.nihongoresources.com/index.php?entry=1222520260}, as processed by Michiel Kamermans. These were then converted into IPA form by referring to available documentation\footnote{\textbf{Katakana to IPA mapping: }http://en.wikipedia.org/wiki/Transcription\_into\_Japanese}\footnote{\textbf{Additional Japanese IPA information: }http://en.wikipedia.org/wiki/Help:IPA\_for\_Japanese} and our understanding of the nature of how Japanese characters are represented\footnote{\textbf{Regarding Katakana to IPA: }The data set contained the words in their original forms, as well as parsed Katakana representations. As Katakana is a Japanese syllabary, it is not complicated to convert from Katakana to IPA. The hardest part was getting Windows to cooperate with UTF-8.}. 
+Japanese Data of 123,332 of the most common words was obtained from a selection of Japanese novels online\footnote{\textbf{Most Common Words in Japanese Novels:} http://pomax.nihongoresources.com/index.php?entry=1222520260}, as processed by Michiel Kamermans. These were then converted into IPA form by referring to available documentation\footnote{\textbf{Katakana to IPA mapping: }http://en.wikipedia.org/wiki/Transcription\_into\_Japanese}\footnote{\textbf{Additional Japanese IPA information: }http://en.wikipedia.org/wiki/Help:IPA\_for\_Japanese} and our understanding of the nature of how Japanese characters are represented\footnote{\textbf{Regarding Katakana to IPA: }The data set contained the words in their original forms, as well as parsed Katakana representations. As Katakana is a Japanese syllabary, it is not complicated to convert from Katakana to IPA. The hardest part was getting Windows to cooperate with UTF-8.}. To maintain the equal distribution of sample data from each language, we randomly selected 60,000 from the processed data to operate on.
+
+
 \subsection{Evaluation}
-Talk about how the accuracy thing is calculated in the algorithms? I don't think it's super complicated? :P
+For all datasets, we randomized the data, reserve 10\% as the testing set, and train the models with the remaining 90\% data points. We compared the label output from both Naive Bayes and Multinomial Logistic Regression models, with the known label from testing set. The baseline is 33.33\% (correct by guessing randomly one of the three languages).
+
 \section{Results}
-We ran \_\_\_\_ models on \_\_\_\_\_\ of each of the data sets. We randomized each data set, took \_\_$\%$ of it for training the models, and $\_\_\%$ for testing purposes. Having earlier done a smaller scale study\footnote{\textbf{Status Report:} https://github.com/violxy/nlpfinal/blob/master/StatusReport.txt} where we obtained 98\% accuracy, we were looking to improve by using more data, and did so by using the above-mentioned data sets.\\
-\\On the larger data set, with all three langauges and an overall test file of \_\_\_ words, we obtained \_\_\% accuracy for the \_\_\_ model, and \_\_\% for the \_\_\_ model. Our results are \_\_\_\_\\
-\\Insert Graphs here. See spreadsheet file.\\
+Having earlier done a smaller scale study\footnote{\textbf{Status Report:} https://github.com/violxy/nlpfinal/blob/master/StatusReport.txt} where we obtained 98\% accuracy, we were looking to improve by using more data, and did so by using the above-mentioned data sets.\\
+\\On the larger data set, with all three langauges and an overall of 155,588 training examples, and 16,570 testing examples, we obtained 99.58\% accuracy for the Naive Bayes model, and 99.70\% for the Multinomial Logistic Regression model. Our results are significantly above baseline of 33\% and almost approaches 100\%.\\
+
+Our results are:
+\begin{verbatim}
+Incorrect: manman	chinese classified as : japanese
+Incorrect: ɕii	chinese classified as : japanese
+Incorrect: moni	chinese classified as : japanese
+Incorrect: feɪpɑŋ	chinese classified as : english
+Incorrect: tanin	chinese classified as : japanese
+Incorrect: paikei	chinese classified as : japanese
+Incorrect: aɪjō	chinese classified as : english
+Incorrect: inman	chinese classified as : japanese
+Incorrect: minnan	chinese classified as : japanese
+Incorrect: inei	chinese classified as : japanese
+Incorrect: ii	chinese classified as : japanese
+Incorrect: mən	chinese classified as : english
+Incorrect: namo	chinese classified as : japanese
+Incorrect: əi	chinese classified as : english
+Incorrect: wɑwɑ	chinese classified as : english
+Incorrect: maiin	chinese classified as : japanese
+Incorrect: matai	chinese classified as : japanese
+Incorrect: paimi	chinese classified as : japanese
+Incorrect: itai	chinese classified as : japanese
+Incorrect: iɕinii	chinese classified as : japanese
+Incorrect: ɕii	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: ərmu	chinese classified as : english
+Incorrect: ama	chinese classified as : japanese
+Incorrect: ii	chinese classified as : japanese
+Incorrect: fənə	chinese classified as : english
+Incorrect: iin	chinese classified as : japanese
+Incorrect: nanmin	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: ɕiin	chinese classified as : japanese
+Incorrect: sanman	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: feɪlaɪ	chinese classified as : english
+Incorrect: aita	chinese classified as : japanese
+Incorrect: tsni	chinese classified as : english
+Incorrect: keii	chinese classified as : japanese
+Incorrect: fənfeɪ	chinese classified as : english
+Incorrect: net	english classified as : japanese
+Incorrect: i:	english classified as : japanese
+Incorrect: h	english classified as : japanese
+Incorrect: meg	english classified as : japanese
+Incorrect: bek	english classified as : japanese
+Incorrect: hek	english classified as : japanese
+Incorrect: bi:set	english classified as : japanese
+Incorrect: ni:	english classified as : japanese
+Incorrect: hen	english classified as : japanese
+Incorrect: kanpan	japanese classified as : chinese
+Incorrect: de	japanese classified as : english
+Incorrect: enden	japanese classified as : english
+Incorrect: in	japanese classified as : chinese
+Incorrect: kanpan	japanese classified as : chinese
+Incorrect: ɕi	japanese classified as : chinese
+Incorrect: an	japanese classified as : chinese
+Incorrect: tenten	japanese classified as : english
+Incorrect: de	japanese classified as : english
+Incorrect: ɕian	japanese classified as : chinese
+Incorrect: iɕi	japanese classified as : chinese
+Incorrect: ɕini	japanese classified as : chinese
+Incorrect: ɕiɕin	japanese classified as : chinese
+Incorrect: ɕin	japanese classified as : chinese
+Incorrect: nanɕin	japanese classified as : chinese
+Incorrect: ɕinɕi	japanese classified as : chinese
+Incorrect: ɕian	japanese classified as : chinese
+Incorrect: pen	japanese classified as : english
+Incorrect: intai	japanese classified as : chinese
+Incorrect: n	japanese classified as : chinese
+Incorrect: n	japanese classified as : chinese
+Incorrect: ɕintai	japanese classified as : chinese
+Incorrect: sanɕi	japanese classified as : chinese
+NB Accuracy: 0.995835847917924
+
+Incorrect: ɕii	chinese classified as : japanese
+Incorrect: moni	chinese classified as : japanese
+Incorrect: ɕi	chinese classified as : japanese
+Incorrect: tanin	chinese classified as : japanese
+Incorrect: paikei	chinese classified as : japanese
+Incorrect: aɪjō	chinese classified as : english
+Incorrect: inei	chinese classified as : japanese
+Incorrect: ii	chinese classified as : japanese
+Incorrect: namo	chinese classified as : japanese
+Incorrect: maiin	chinese classified as : japanese
+Incorrect: matai	chinese classified as : japanese
+Incorrect: itai	chinese classified as : japanese
+Incorrect: iɕinii	chinese classified as : japanese
+Incorrect: ɕii	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: ama	chinese classified as : japanese
+Incorrect: ɕi	chinese classified as : japanese
+Incorrect: ii	chinese classified as : japanese
+Incorrect: tanta	chinese classified as : japanese
+Incorrect: tanpai	chinese classified as : japanese
+Incorrect: iin	chinese classified as : japanese
+Incorrect: iɕin	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: ɕiin	chinese classified as : japanese
+Incorrect: sanman	chinese classified as : japanese
+Incorrect: i	chinese classified as : japanese
+Incorrect: aiia	chinese classified as : japanese
+Incorrect: feɪlaɪ	chinese classified as : english
+Incorrect: aita	chinese classified as : japanese
+Incorrect: inpei	chinese classified as : japanese
+Incorrect: keii	chinese classified as : japanese
+Incorrect: iɕin	chinese classified as : japanese
+Incorrect: i:	english classified as : japanese
+Incorrect: meɪaɪən	english classified as : chinese
+Incorrect: ði:i:	english classified as : japanese
+Incorrect: hen	english classified as : japanese
+Incorrect: manman	japanese classified as : chinese
+Incorrect: in	japanese classified as : chinese
+Incorrect: innai	japanese classified as : chinese
+Incorrect: ɕian	japanese classified as : chinese
+Incorrect: ɕini	japanese classified as : chinese
+Incorrect: nanɕin	japanese classified as : chinese
+Incorrect: ɕian	japanese classified as : chinese
+Incorrect: pen	japanese classified as : english
+Incorrect: imapo	japanese classified as : chinese
+Incorrect: n	japanese classified as : english
+Incorrect: taimei	japanese classified as : chinese
+Incorrect: n	japanese classified as : english
+Incorrect: nannan	japanese classified as : chinese
+MLR Accuracy: 0.9970428485214242
+
+MLR Log prob: -107.20564227801076
+NB Log prob: -337.0368341477132
+\end{verbatim}
+
+Insert Graphs here. See spreadsheet file.\\
 \\As can be seen, most of these errors come from mistakenly classifying Chinese as Japanese, and vice versa. This makes sense, considering how close some Japanese words are to Chinese words, having partially originated from there. Furthermore, the phonemes used in Japanese do have a large overlap with those of Chinese.
 \section{Conclusion}
-It is possible to differentiate between languages using simple linear classifiers such as \_\_\_ and \_\_\_. Given more time and easier access to IPA converters, we could expand this project to other languages.\\
-\\Add more here. :D
+It is possible to differentiate between languages using simple linear classifiers such as Naive Bayes and Multinomial Logistic Regression. Given more time and easier access to IPA converters, we could expand this project to other languages.\\
+
 \section{Code}
 The code for this project can be found at the shared Github repository.\footnote{\textbf{Github Repository: }https://github.com/violxy/nlpfinal/}
 \end{document}
