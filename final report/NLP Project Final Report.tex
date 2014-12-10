@@ -1,0 +1,33 @@
+\documentclass{paper}
+\usepackage{tipa}
+\begin{document}
+\title{NLP Final Project}
+\author{Viona Lam, Szeyin Lee}
+\maketitle
+\section{Introduction}
+Given a word in its IPA form that is either English, Chinese or Japanese, our model classifies which language it is based on labeled data.
+\section{Experimental Setup}
+\subsection{Models}
+Due to ease of use, and relevance to our project goal of classifying words into their source languages, we chose to use the linear classifiers available in the \_\_\_ library\footnote{Add Source Here}, \_\_\_ and \_\_\_.
+\subsubsection{Model 1: Add stuff here}
+\subsubsection{Model 2: Add stuff here}
+\subsection{Data}
+\subsubsection{English Data}
+English data of 44460 of the most common words from the NY Times was obtained from the Bag of Words Dataset provided by UC Irvine\footnote{\textbf{Bag of Words Data Set:} https://archive.ics.uci.edu/ml/datasets/Bag+of+Words}. These were then converted into IPA form using Tom Brondstod's English to IPA converter.\footnote{\textbf{English to IPA Converter 1:} http://tom.brondsted.dk/text2phoneme/} To ensure accuracy, the results were also partially cross-checked with another converter.\footnote{\textbf{English to IPA Converter 2: }http://lingorado.com/ipa/} In addition, as English speakers, the IPA sounded right to us.
+\subsubsection{Mandarin Chinese Data}
+Mandarin Chinese data of 38285 of the most common words was obtained from the Modern Chinese Frequent Vocab List\footnote{\textbf{Modern Chinese Frequent Vocab List: }http://vdisk.weibo.com/s/ueoM8g6c-sm2o (click the blue button with the downwards arrow to download)} a text published by the People's Republic of China's State Language Commission in November 2008. These were then converted into pinyin using the NJStar software\footnote{\textbf{Chinese Word Processor: }http://www.njstar.com/cms/njstar-chinese-word-processor-download}, and then into IPA form by referring to available documentation\footnote{\textbf{Pinyin to IPA Mapping:} https://github.com/cburgmer/cjklib/blob/master/cjklib/data/pinyinipamapping.csv} from cjklib\footnote{\textbf{CJKLib: }https://code.google.com/p/cjklib/}, a publicly accessible python library. Tones were stripped from the conversions, as they would make the decision of whether a word is Chinese or not incredibly trivial. The results were partially cross-checked with another converter\footnote{\textbf{Limited Chinese to IPA Converter: }http://easypronunciation.com/en/chinese-pinyin-phonetic-transcription-converter} to ensure accuracy.
+\subsubsection{Japanese Data}
+Japanese Data of 123332 of the most common words was obtained from a selection of Japanese novels online\footnote{\textbf{Most Common Words in Japanese Novels:} http://pomax.nihongoresources.com/index.php?entry=1222520260}, as processed by Michiel Kamermans. These were then converted into IPA form by referring to available documentation\footnote{\textbf{Katakana to IPA mapping: }http://en.wikipedia.org/wiki/Transcription\_into\_Japanese}\footnote{\textbf{Additional Japanese IPA information: }http://en.wikipedia.org/wiki/Help:IPA\_for\_Japanese} and our understanding of the nature of how Japanese characters are represented\footnote{\textbf{Regarding Katakana to IPA: }The data set contained the words in their original forms, as well as parsed Katakana representations. As Katakana is a Japanese syllabary, it is not complicated to convert from Katakana to IPA. The hardest part was getting Windows to cooperate with UTF-8.}. 
+\subsection{Evaluation}
+Talk about how the accuracy thing is calculated in the algorithms? I don't think it's super complicated? :P
+\section{Results}
+We ran \_\_\_\_ models on \_\_\_\_\_\ of each of the data sets. We randomized each data set, took \_\_$\%$ of it for training the models, and $\_\_\%$ for testing purposes. Having earlier done a smaller scale study\footnote{\textbf{Status Report:} https://github.com/violxy/nlpfinal/blob/master/StatusReport.txt} where we obtained 98\% accuracy, we were looking to improve by using more data, and did so by using the above-mentioned data sets.\\
+\\On the larger data set, with all three langauges and an overall test file of \_\_\_ words, we obtained \_\_\% accuracy for the \_\_\_ model, and \_\_\% for the \_\_\_ model. Our results are \_\_\_\_\\
+\\Insert Graphs here. See spreadsheet file.\\
+\\As can be seen, most of these errors come from mistakenly classifying Chinese as Japanese, and vice versa. This makes sense, considering how close some Japanese words are to Chinese words, having partially originated from there. Furthermore, the phonemes used in Japanese do have a large overlap with those of Chinese.
+\section{Conclusion}
+It is possible to differentiate between languages using simple linear classifiers such as \_\_\_ and \_\_\_. Given more time and easier access to IPA converters, we could expand this project to other languages.\\
+\\Add more here. :D
+\section{Code}
+The code for this project can be found at the shared Github repository.\footnote{\textbf{Github Repository: }https://github.com/violxy/nlpfinal/}
+\end{document}
