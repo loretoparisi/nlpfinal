@@ -1,6 +1,8 @@
 \documentclass[a4paper]{article}
 \usepackage[english]{babel}
 \usepackage{tipa}
+\usepackage{graphicx}
+\usepackage{float}
 
 \title{NLP Final Project : \\
 Building an International Phonetic Alphabet Classifier}
@@ -49,135 +51,24 @@ Having earlier done a smaller scale study\footnote{\textbf{Status Report:} https
 \\On the larger data set, with all three langauges and an overall of 155,588 training examples, and 16,570 testing examples, we obtained 99.58\% accuracy for the Naive Bayes model, and 99.70\% for the Multinomial Logistic Regression model. Our results are significantly above baseline of 33\% and almost approaches 100\%.\\
 
 Our results are:
-\begin{verbatim}
-Incorrect: manman	chinese classified as : japanese
-Incorrect: ɕii	chinese classified as : japanese
-Incorrect: moni	chinese classified as : japanese
-Incorrect: feɪpɑŋ	chinese classified as : english
-Incorrect: tanin	chinese classified as : japanese
-Incorrect: paikei	chinese classified as : japanese
-Incorrect: aɪjō	chinese classified as : english
-Incorrect: inman	chinese classified as : japanese
-Incorrect: minnan	chinese classified as : japanese
-Incorrect: inei	chinese classified as : japanese
-Incorrect: ii	chinese classified as : japanese
-Incorrect: mən	chinese classified as : english
-Incorrect: namo	chinese classified as : japanese
-Incorrect: əi	chinese classified as : english
-Incorrect: wɑwɑ	chinese classified as : english
-Incorrect: maiin	chinese classified as : japanese
-Incorrect: matai	chinese classified as : japanese
-Incorrect: paimi	chinese classified as : japanese
-Incorrect: itai	chinese classified as : japanese
-Incorrect: iɕinii	chinese classified as : japanese
-Incorrect: ɕii	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: ərmu	chinese classified as : english
-Incorrect: ama	chinese classified as : japanese
-Incorrect: ii	chinese classified as : japanese
-Incorrect: fənə	chinese classified as : english
-Incorrect: iin	chinese classified as : japanese
-Incorrect: nanmin	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: ɕiin	chinese classified as : japanese
-Incorrect: sanman	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: feɪlaɪ	chinese classified as : english
-Incorrect: aita	chinese classified as : japanese
-Incorrect: tsni	chinese classified as : english
-Incorrect: keii	chinese classified as : japanese
-Incorrect: fənfeɪ	chinese classified as : english
-Incorrect: net	english classified as : japanese
-Incorrect: i:	english classified as : japanese
-Incorrect: h	english classified as : japanese
-Incorrect: meg	english classified as : japanese
-Incorrect: bek	english classified as : japanese
-Incorrect: hek	english classified as : japanese
-Incorrect: bi:set	english classified as : japanese
-Incorrect: ni:	english classified as : japanese
-Incorrect: hen	english classified as : japanese
-Incorrect: kanpan	japanese classified as : chinese
-Incorrect: de	japanese classified as : english
-Incorrect: enden	japanese classified as : english
-Incorrect: in	japanese classified as : chinese
-Incorrect: kanpan	japanese classified as : chinese
-Incorrect: ɕi	japanese classified as : chinese
-Incorrect: an	japanese classified as : chinese
-Incorrect: tenten	japanese classified as : english
-Incorrect: de	japanese classified as : english
-Incorrect: ɕian	japanese classified as : chinese
-Incorrect: iɕi	japanese classified as : chinese
-Incorrect: ɕini	japanese classified as : chinese
-Incorrect: ɕiɕin	japanese classified as : chinese
-Incorrect: ɕin	japanese classified as : chinese
-Incorrect: nanɕin	japanese classified as : chinese
-Incorrect: ɕinɕi	japanese classified as : chinese
-Incorrect: ɕian	japanese classified as : chinese
-Incorrect: pen	japanese classified as : english
-Incorrect: intai	japanese classified as : chinese
-Incorrect: n	japanese classified as : chinese
-Incorrect: n	japanese classified as : chinese
-Incorrect: ɕintai	japanese classified as : chinese
-Incorrect: sanɕi	japanese classified as : chinese
-NB Accuracy: 0.995835847917924
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{nbresult.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{mlrresult.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{nbgraph.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{mlrgraph.png}
+\end{figure}
 
-Incorrect: ɕii	chinese classified as : japanese
-Incorrect: moni	chinese classified as : japanese
-Incorrect: ɕi	chinese classified as : japanese
-Incorrect: tanin	chinese classified as : japanese
-Incorrect: paikei	chinese classified as : japanese
-Incorrect: aɪjō	chinese classified as : english
-Incorrect: inei	chinese classified as : japanese
-Incorrect: ii	chinese classified as : japanese
-Incorrect: namo	chinese classified as : japanese
-Incorrect: maiin	chinese classified as : japanese
-Incorrect: matai	chinese classified as : japanese
-Incorrect: itai	chinese classified as : japanese
-Incorrect: iɕinii	chinese classified as : japanese
-Incorrect: ɕii	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: ama	chinese classified as : japanese
-Incorrect: ɕi	chinese classified as : japanese
-Incorrect: ii	chinese classified as : japanese
-Incorrect: tanta	chinese classified as : japanese
-Incorrect: tanpai	chinese classified as : japanese
-Incorrect: iin	chinese classified as : japanese
-Incorrect: iɕin	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: ɕiin	chinese classified as : japanese
-Incorrect: sanman	chinese classified as : japanese
-Incorrect: i	chinese classified as : japanese
-Incorrect: aiia	chinese classified as : japanese
-Incorrect: feɪlaɪ	chinese classified as : english
-Incorrect: aita	chinese classified as : japanese
-Incorrect: inpei	chinese classified as : japanese
-Incorrect: keii	chinese classified as : japanese
-Incorrect: iɕin	chinese classified as : japanese
-Incorrect: i:	english classified as : japanese
-Incorrect: meɪaɪən	english classified as : chinese
-Incorrect: ði:i:	english classified as : japanese
-Incorrect: hen	english classified as : japanese
-Incorrect: manman	japanese classified as : chinese
-Incorrect: in	japanese classified as : chinese
-Incorrect: innai	japanese classified as : chinese
-Incorrect: ɕian	japanese classified as : chinese
-Incorrect: ɕini	japanese classified as : chinese
-Incorrect: nanɕin	japanese classified as : chinese
-Incorrect: ɕian	japanese classified as : chinese
-Incorrect: pen	japanese classified as : english
-Incorrect: imapo	japanese classified as : chinese
-Incorrect: n	japanese classified as : english
-Incorrect: taimei	japanese classified as : chinese
-Incorrect: n	japanese classified as : english
-Incorrect: nannan	japanese classified as : chinese
-MLR Accuracy: 0.9970428485214242
-
-MLR Log prob: -107.20564227801076
-NB Log prob: -337.0368341477132
-\end{verbatim}
-
-Insert Graphs here. See spreadsheet file.\\
-\\As can be seen, most of these errors come from mistakenly classifying Chinese as Japanese, and vice versa. This makes sense, considering how close some Japanese words are to Chinese words, having partially originated from there. Furthermore, the phonemes used in Japanese do have a large overlap with those of Chinese.
+As can be seen, most of these errors come from mistakenly classifying Chinese as Japanese, and vice versa. This makes sense, considering how close some Japanese words are to Chinese words, having partially originated from there. Furthermore, the phonemes used in Japanese do have a large overlap with those of Chinese.
 \section{Conclusion}
 It is possible to differentiate between languages using simple linear classifiers such as Naive Bayes and Multinomial Logistic Regression. Given more time and easier access to IPA converters, we could expand this project to other languages.\\
 
