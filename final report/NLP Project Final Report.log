@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.15)  10 DEC 2014 05:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.15)  10 DEC 2014 16:34
 entering extended mode
 **NLP*Project*Final*Report.tex
-("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\NLP Project Final Report.tex"
+
+("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\final report\NLP Project Fina
+l Report.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,27 +15,44 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\paper\paper.cls"
-Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
-\hours=\count79
-\minutes=\count80
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
-\beforetitlespace=\skip41
-\c@part=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\exampleindent=\skip42
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip43
-\belowcaptionskip=\skip44
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\tipa.sty"
 Package: tipa 2002/08/08 TIPA version 1.1
 
@@ -47,112 +66,190 @@ File: t3enc.def 2001/12/31 T3 encoding
 File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
 )))
-("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\NLP Project Final Report.aux"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count89
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\final report\NLP Project Fina
+l Report.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 12.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count90
+\scratchdimen=\dimen106
+\scratchbox=\box28
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count93
+\MPscratchDim=\dimen107
+\MPnumerator=\count94
+\makeMPintoPDFobject=\count95
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
+ [1
+
+{C:/Users/Vio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 [][]\OT1/cmr/bx/n/8 Chinese Word Pro-ces-sor: \OT1/cmr/m/n/8 http://www.njstar.
 com/cms/njstar-chinese-word-
  []
 
 
-Overfull \hbox (89.3003pt too wide) in paragraph at lines 18--18
+Overfull \hbox (89.3003pt too wide) in paragraph at lines 31--31
 [][]\OT1/cmr/bx/n/8 Pinyin to IPA Map-ping: \OT1/cmr/m/n/8 https://github.com/c
 burgmer/cjklib/blob/master/cjklib/data/pinyinipamapping.csv| 
  []
 
-[1
 
-
-{C:/Users/Vio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (97.78546pt too wide) in paragraph at lines 20--20
+Overfull \hbox (97.78546pt too wide) in paragraph at lines 33--33
 [][]\OT1/cmr/bx/n/8 Most Com-mon Words in Japanese Nov-els: \OT1/cmr/m/n/8 http
 ://pomax.nihongoresources.com/index.php?entry=1222520260| 
  []
 
 
-Overfull \hbox (1.07172pt too wide) in paragraph at lines 20--20
+Overfull \hbox (1.07172pt too wide) in paragraph at lines 33--33
 [][]\OT1/cmr/bx/n/8 Katakana to IPA map-ping: \OT1/cmr/m/n/8 http://en.wikipedi
 a.org/wiki/Transcription[]into[]Japanese| 
  []
 
 
-Overfull \hbox (28.43318pt too wide) in paragraph at lines 20--20
+Overfull \hbox (28.43318pt too wide) in paragraph at lines 33--33
 [][]\OT1/cmr/bx/n/8 Additional Japanese IPA in-for-ma-tion: \OT1/cmr/m/n/8 http
 ://en.wikipedia.org/wiki/Help:IPA[]for[]Japanese| 
  []
 
+[2] <nbgraph.png, id=17, 502.12593pt x 395.22656pt>
+File: nbgraph.png Graphic file (type png)
+ <use nbgraph.png>
+Package pdftex.def Info: nbgraph.png used on input line 42.
+(pdftex.def)             Requested size: 345.0pt x 271.56682pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--28
+Underfull \hbox (badness 10000) in paragraph at lines 37--43
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--43
 
  []
 
-[3]
-("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\NLP Project Final Report.aux"
-) ) 
+<mlrgraph.png, id=18, 526.96875pt x 381.67593pt>
+File: mlrgraph.png Graphic file (type png)
+ <use mlrgraph.png>
+Package pdftex.def Info: mlrgraph.png used on input line 46.
+(pdftex.def)             Requested size: 345.0pt x 249.89183pt.
+ [3 <C:/Users/Vio/Documents/Viona14/Fall/NLP/Project/final report/nbgraph.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+<nbresult.png, id=23, 360.59718pt x 988.44281pt>
+File: nbresult.png Graphic file (type png)
+ <use nbresult.png>
+Package pdftex.def Info: nbresult.png used on input line 57.
+(pdftex.def)             Requested size: 252.94499pt x 693.35316pt.
+
+<mlrresult.png, id=24, 371.88937pt x 677.53125pt>
+File: mlrresult.png Graphic file (type png)
+ <use mlrresult.png>
+Package pdftex.def Info: mlrresult.png used on input line 61.
+(pdftex.def)             Requested size: 252.94499pt x 460.8392pt.
+ [4 <C:/Users/Vio/Documents/Viona14/Fall/NLP/Project/final report/mlrgraph.png>
+]
+Overfull \vbox (95.35316pt too high) has occurred while \output is active []
+
+
+[5 <C:/Users/Vio/Documents/Viona14/Fall/NLP/Project/final report/nbresult.png>]
+[6 <C:/Users/Vio/Documents/Viona14/Fall/NLP/Project/final report/mlrresult.png>
+]
+("C:\Users\Vio\Documents\Viona14\Fall\NLP\Project\final report\NLP Project Fina
+l Report.aux") ) 
 Here is how much of TeX's memory you used:
- 1432 strings out of 494045
- 16615 string characters out of 3145974
- 61405 words of memory out of 3000000
- 4773 multiletter control sequences out of 15000+200000
- 11360 words of font info for 39 fonts, out of 3000000 for 9000
+ 2551 strings out of 494045
+ 32030 string characters out of 3145974
+ 81690 words of memory out of 3000000
+ 5846 multiletter control sequences out of 15000+200000
+ 9208 words of font info for 32 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,8n,23p,1228b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
-Output written on "NLP Project Final Report.pdf" (3 pages, 125439 bytes).
+ 34i,8n,23p,1229b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on "NLP Project Final Report.pdf" (6 pages, 186670 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
