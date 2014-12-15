@@ -15,7 +15,7 @@ Building an International Phonetic Alphabet Classifier}
 
 
 \section{Introduction}
-Given a word in its IPA form that is either English, Chinese or Japanese, our model classifies which language it is based on labeled data.
+This project is motivated by our interest in the domain of speech recognition. We are interested in how manchine processes the sounds receieved from a speaker, and understands the sounds as natural language. The scope of our project focuses on one particular area of speech recognition: classifying words in International Phonetic Alphabet format into  different languages. In other words, given a word in its IPA form that is either English, Chinese or Japanese, our model classifies which language it is based on labeled data.
 \section{Experimental Setup}
 \subsection{Models}
 Instead of coding the models ourselves from scratch, we leverage the existing models that have been built and optimized, available in the Stanford JavaNLP Classifier library\footnote{http://nlp.stanford.edu/software/classifier.shtml}. A classifier is a machine learning tool that takes data points and classify them into one of k classes. For this project, we are using two classifiers: Naive Bayes Model and Multinomial Logistic Regression Model. For both of the models, we use the same set of features: unigram, bigram, trigram, and counts. 
@@ -47,7 +47,7 @@ Having earlier done a smaller scale study\footnote{\textbf{Status Report:} https
 \end{figure}
 As can be seen, most of these errors come from mistakenly classifying Chinese as Japanese, and vice versa. This makes sense, considering how close some Japanese words are to Chinese words, having partially originated from there. Furthermore, the phonemes used in Japanese do have a large overlap with those of Chinese.
 \section{Conclusion}
-It is possible to differentiate between languages using simple linear classifiers such as Naive Bayes and Multinomial Logistic Regression to a high level of accuracy (95\%). Given more time and easier access to IPA converters, we could expand this project to other languages.\\
+It is possible to differentiate between languages using simple linear classifiers such as Naive Bayes and Multinomial Logistic Regression to a high level of accuracy ($\ge$99.6\%). Given more time and easier access to IPA converters, we could expand this project to other languages.\\
 \section{Code}
 The code for this project can be found at the shared Github repository.\footnote{\textbf{Github Repository: }https://github.com/violxy/nlpfinal/}
 \section{Appendix}
